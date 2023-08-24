@@ -1,0 +1,12 @@
+table{
+    border: 2px solid paleturquoise;
+}
+#ol
+{
+    color: palegreen;
+    text-shadow: 3px 5px 6px palegoldenrod;
+    border: 1px double dodgerblue;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    text-align: center;
+}
