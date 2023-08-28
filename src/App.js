@@ -1,10 +1,12 @@
 import {  BootstrapProcess1 } from "./BootstrapExecution";
 import OrderlistHTML, { AnchorTagsHTML, BasictagsHTML, TableHTML } from "./Components";
+import { Usestatehook2 } from "./Hooks";
 
 function App()
 {
  return(
     <>
+    <Usestatehook2/>
     <AnchorTagsHTML/>
     <p>
       JSON is the replacement of the XML data exchange format in JSON.
