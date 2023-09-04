@@ -1,13 +1,21 @@
 // import {  BootstrapProcess1 } from "./BootstrapExecution";
 // import OrderlistHTML, { AnchorTagsHTML, BasictagsHTML, TableHTML } from "./Components";
 // import { Usestatehook2 } from "./Hooks";
-import { Usestateusingternary } from "./TernarywithUsestate";
+import { BrowserRouter, Route,  Routes } from 'react-router-dom';
+import { BootstrapProcess1 } from './BootstrapExecution';
+import { Homepage } from './Navigation';
 
 function App()
 {
  return(
     <>
-    <Usestateusingternary/>
+    <BrowserRouter>
+    <Homepage/>
+    <Routes>
+      <Route path='mainpage' exact element={<BootstrapProcess1/>}/>
+    </Routes>
+    </BrowserRouter>
+    {/* <Usestateusingternary/> */}
     {/* <Usestatehook2/>
     <AnchorTagsHTML/>
     <p>
