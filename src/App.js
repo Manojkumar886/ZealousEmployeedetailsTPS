@@ -4,17 +4,19 @@
 import { BrowserRouter, Route,  Routes } from 'react-router-dom';
 import { BootstrapProcess1 } from './BootstrapExecution';
 import { Homepage } from './Navigation';
+import { Registration } from './RegistrationForm';
 
 function App()
 {
  return(
     <>
-    <BrowserRouter>
+    <Registration/>
+    {/* <BrowserRouter>
     <Homepage/>
     <Routes>
       <Route path='mainpage' exact element={<BootstrapProcess1/>}/>
     </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
     {/* <Usestateusingternary/> */}
     {/* <Usestatehook2/>
     <AnchorTagsHTML/>
