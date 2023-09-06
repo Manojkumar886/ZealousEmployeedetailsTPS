@@ -3,20 +3,21 @@
 // import { Usestatehook2 } from "./Hooks";
 import { BrowserRouter, Route,  Routes } from 'react-router-dom';
 import { BootstrapProcess1 } from './BootstrapExecution';
-import { Homepage } from './Navigation';
 import { Registration } from './RegistrationForm';
+import { Homepage } from './ZealousPage';
+import { Viewpage } from './Listpage';
 
 function App()
 {
  return(
     <>
-    <Registration/>
-    {/* <BrowserRouter>
+    {/* <Registration/> */}
+    <BrowserRouter>
     <Homepage/>
     <Routes>
-      <Route path='mainpage' exact element={<BootstrapProcess1/>}/>
+      <Route path='listall' exact element={<Viewpage/>}/>
     </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
     {/* <Usestateusingternary/> */}
     {/* <Usestatehook2/>
     <AnchorTagsHTML/>

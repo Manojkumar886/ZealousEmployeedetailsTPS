@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
+import { create, getting } from './Employeedetails'
 
 
 export let Registration=()=>
@@ -42,6 +43,8 @@ export let Registration=()=>
     const register=()=>
     {
         alert("Welcome to Zealouus Tech Corp (your values added successfully)"+JSON.stringify(uservalues))
+        create(uservalues)
+        alert(getting())
     }
     const reject=()=>
     {
