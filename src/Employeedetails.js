@@ -30,10 +30,16 @@ let Zealousempdetails=[
 ]
 export const create=(obj)=>
 {
-    Zealousempdetails.unshift(obj);
+    Zealousempdetails.push(obj);
 }
 
 export const getting=()=>
 {
     return Zealousempdetails;
+}
+
+export const read=(index)=>
+{
+    return Zealousempdetails[index];
+    // zealousempdetails[2];
 }

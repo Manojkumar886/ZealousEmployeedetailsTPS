@@ -6,7 +6,7 @@ import { create, getting } from './Employeedetails'
 export let Registration=()=>
 {
     const[uservalues,setUservalues]=useState({
-        "empId":0,
+        "empId":0, 
         "empName":"",
         "empUsername":"",
         "empPassword":"",
@@ -22,7 +22,7 @@ export let Registration=()=>
         setUservalues((getting)=>
         {
             return{
-                ...getting,
+                ...getting,//Spread
                 [name]:value
             }   
         })
