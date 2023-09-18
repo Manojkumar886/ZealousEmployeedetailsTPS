@@ -43,3 +43,41 @@ export const read=(index)=>
     return Zealousempdetails[index];
     // zealousempdetails[2];
 }
+
+
+export const fetchExact=(name)=>
+{
+    const temp=Zealousempdetails.filter((get)=>
+    {
+        return get.empName===name;
+    })
+    return temp[0];
+}
+
+export const replacevalues=(data,index)=>
+{
+    Zealousempdetails[index]=data;
+}
+
+export const deleting=(ind)=>
+{
+    let say=prompt(" please tell us your value are delete yes/no")
+
+    if(say==='yes')
+    {
+        Zealousempdetails=Zealousempdetails.filter((data,index)=>
+        {
+            return index!==ind;
+        })
+        return Zealousempdetails;
+    }
+    else if (say==='no')
+    {
+        alert(" your value is not deleted")
+        return Zealousempdetails;
+    }
+    else
+    {
+        alert(" Nothing permanent")
+    }
+}

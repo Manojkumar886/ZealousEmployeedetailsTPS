@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useEffect, useState } from 'react';
-import { getting } from './Employeedetails';
+import { deleting, fetchExact, getting } from './Employeedetails';
 import { Registration } from './RegistrationForm';
 import { Reading } from './Readpage';
+import { Updating } from './updatepage';
 
 export const Viewpage=()=>
 {
@@ -10,6 +11,8 @@ export const Viewpage=()=>
     const[createview,setCreateview]=useState(false);
     const[readview,setReadview]=useState(false);
     const[pos,setPos]=useState(0);
+    const[updateview,setUpdateview]=useState(false);
+    const[object,setObject]=useState({})
 
     const setavalue=()=>
     {
@@ -49,6 +52,18 @@ export const Viewpage=()=>
                             setReadview(false)
                         }}>
                             Back
+                        </button>
+                        </>
+                        :
+                        (updateview)?
+                        <>
+                        <Updating who={pos} mention={object}/>
+                        <button className='btn btn-outline-secondary'
+                        onClick={()=>
+                        {
+                            setUpdateview(false)
+                        }}>
+                            BACK
                         </button>
                         </>
                         :
@@ -96,8 +111,19 @@ export const Viewpage=()=>
                                      <td>{data.empSalary}</td>   
                                      <td>
                                          
-                                         <button className='btn btn-outline-success ms-1 '>Update</button>
-                                         <button className='btn btn-outline-danger mt-1'>Delete</button>
+                                         <button className='btn btn-outline-success ms-1 '
+                                         onClick={()=>
+                                         {
+                                            setUpdateview(true);
+                                            setPos(index);
+                                            const temp=fetchExact(data.empName);
+                                            setObject(temp);
+                                         }}>Update</button>
+                                         <button className='btn btn-outline-danger mt-1'
+                                         onClick={()=>
+                                         {
+                                            setTemparray(deleting(index));
+                                         }}>Delete</button>
                                      </td> 
                                  </tr>
                                  </>     
