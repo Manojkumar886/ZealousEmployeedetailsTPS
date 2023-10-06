@@ -8,7 +8,7 @@ export let Home=()=>
 {
     return(
         <>
-            <Navbar bg='primary' expand='lg'>
+            <Navbar bg='success' expand='lg'>
                 <NavbarBrand href="#Home">Navigation</NavbarBrand>
                 <NavbarToggle aria-controls="mynavbar"></NavbarToggle>
                 <NavbarCollapse id="mynavbar"> 
