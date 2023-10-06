@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ZealousEmployeedetailsTPS/static/css/main.d2660a38.css",
+    "main.js": "/ZealousEmployeedetailsTPS/static/js/main.58e36c2e.js",
+    "static/media/bootstrap-icons.woff?": "/ZealousEmployeedetailsTPS/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/ZealousEmployeedetailsTPS/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/ZealousEmployeedetailsTPS/index.html",
+    "main.d2660a38.css.map": "/ZealousEmployeedetailsTPS/static/css/main.d2660a38.css.map",
+    "main.58e36c2e.js.map": "/ZealousEmployeedetailsTPS/static/js/main.58e36c2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2660a38.css",
+    "static/js/main.58e36c2e.js"
+  ]
+}
